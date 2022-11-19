@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
+import AllMovies from "./components/AllMovies/AllMovies";
+import Movies from "./components/Movies/Movies";
+import Advertise from "./components/Advertise/Advertise";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+import requests from "./helpers/requests";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <Banner />
+      <AllMovies />
+      <Movies title="What's Popular" fetchUrl={requests.getMoviesPopular} />
+      <Movies title="Free to Watch" fetchUrl={requests.getMoviesFree} />
+      <Movies title="Trending" fetchUrl={requests.getMoviesTrending} />
+      <Advertise />
+      <Footer />
     </div>
-  );
+  )
 }
-
-export default App;

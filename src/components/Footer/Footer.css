@@ -1,0 +1,49 @@
+.footer-container {
+  color: white;
+  background-color: black;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 200px;
+  padding-top: 50px;
+  margin: 0 5%;
+}
+
+.join-community {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-btn {
+  text-decoration: none;
+  background-color: aliceblue;
+  border-radius: 12px;
+  height: 30px;
+  width: 200px;
+  text-align: center;
+}
+
+.column-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+.column-list ul li {
+  list-style: none;
+}
+
+.column-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.join-community {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+}

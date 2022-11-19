@@ -1,0 +1,59 @@
+.movies {
+  position: relative;
+}
+
+.category-flex {
+  display: flex;
+  gap: 50px;
+}
+
+.category-title {
+  margin: 30px 0 20px 0;
+  padding-left: 5%;
+}
+
+.category-buttons {
+  margin-top: 35px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-left: 5%;
+}
+
+.each-movie-box {
+  margin-bottom: 20px;
+}
+
+.row-poster {
+  cursor: pointer;
+  object-fit: contain;
+  margin-right: 20px;
+  max-height: 240px;
+  max-width: 200px;
+  border-radius: 10px;
+  transition: transform 450ms;
+}
+
+.row-poster-small:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.row-poster-content {
+  padding: 26px 10px 0;
+}
+
+.movie-title {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.movie-date {
+  padding-top: 5px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
